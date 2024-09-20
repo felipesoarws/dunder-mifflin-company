@@ -1,3 +1,91 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #f7f8f9;
+  font-family: "NeueHaasDisplayRoman";
+}
+
+.background {
+  background: url("./assets/header_desktop.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  @media (max-width: 430px) {
+    background: url("./assets/header_mobile.png");
+  }
+}
+
+@font-face {
+  font-family: "NeueHaasDisplayBlack";
+  src: local("NeueHaasDisplayBlack"),
+    url("./assets/fonts/NeueHaasDisplayBlack.ttf");
+}
+
+.f-black {
+  font-family: "NeueHaasDisplayBlack";
+}
+
+@font-face {
+  font-family: "NeueHaasDisplayBold";
+  src: local("NeueHaasDisplayBold"),
+    url("./assets/fonts/NeueHaasDisplayBold.ttf");
+}
+
+.f-bold {
+  font-family: "NeueHaasDisplayBold";
+}
+
+@font-face {
+  font-family: "NeueHaasDisplayLight";
+  src: local("NeueHaasDisplayLight"),
+    url("./assets/fonts/NeueHaasDisplayLight.ttf");
+}
+
+.f-light {
+  font-family: "NeueHaasDisplayLight";
+}
+
+@font-face {
+  font-family: "NeueHaasDisplayMediu";
+  src: local("NeueHaasDisplayMediu"),
+    url("./assets/fonts/NeueHaasDisplayMediu.ttf");
+}
+
+.f-medium {
+  font-family: "NeueHaasDisplayMediu";
+}
+
+@font-face {
+  font-family: "NeueHaasDisplayRoman";
+  src: local("NeueHaasDisplayRoman"),
+    url("./assets/fonts/NeueHaasDisplayRoman.ttf");
+}
+
+.f-roman {
+  font-family: "NeueHaasDisplayRoman";
+}
+
+@font-face {
+  font-family: "NeueHaasDisplayThin";
+  src: local("NeueHaasDisplayThin"),
+    url("./assets/fonts/NeueHaasDisplayThin.ttf");
+}
+
+.f-thin {
+  font-family: "NeueHaasDisplayThin";
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f7f8f9;
+}
