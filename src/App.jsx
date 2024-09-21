@@ -1,6 +1,12 @@
+import OurTeam from "./components/OurTeam";
+
 import logo from "./assets/logo.png";
 import f_wallpaper from "./assets/f-wallpaper.png";
 import icon_michael from "./assets/icon-michael.png";
+
+import scranton_bg from "./assets/scranton_bg.png";
+import stamford_bg from "./assets/stamford_bg.png";
+import utica_bg from "./assets/utica_bg.png";
 
 function App() {
   return (
@@ -9,8 +15,8 @@ function App() {
         <img className="block w-[5rem] md:w-[8vw]" src={logo} alt="logo" />
       </header>
       <div className="background absolute top-0 left-0 right-0 z-0">
-        <div className="absolute bottom-[-5rem] left-0 right-0 min-[430px]:bottom-[9.5rem] min-[430px]:right-[2rem] lg:bottom-[4vw] lg:right-[2.5vw]">
-          <h1 className="f-medium text-[#232323] text-[1.3rem] leading-[23px] text-center min-[430px]:text-right md:text-[1.8rem] lg:text-[3.5vw] lg:leading-[3vw]">
+        <div className="absolute bottom-[-8rem] left-0 right-0 min-[430px]:bottom-[9.5rem] min-[430px]:right-[2rem] lg:bottom-[4vw] lg:right-[2.5vw]">
+          <h1 className="f-medium text-[#232323] text-[1.6rem] leading-[23px] text-center min-[430px]:text-right md:text-[1.8rem] lg:text-[3.5vw] lg:leading-[3vw]">
             Fornecendo papel
             <span className="block">de alta qualidade para</span>
             <span className="block">empresas de todos os portes.</span>
@@ -20,7 +26,7 @@ function App() {
           </h2>
         </div>
       </div>
-      <main className="mt-[115vh] md:mt-[80vh] min-[1024px]:mt-[95vh]">
+      <main className="mt-[120vh] md:mt-[80vh] min-[1024px]:mt-[95vh]">
         <section className="min-[1024px]:flex gap-5">
           <div className="mx-8 lg:m-[2.5vw] min-[1024px]:w-[150vw] min-[1024px]:mx-[3vw]">
             <h2 className="f-medium text-[#232323] text-[1.2rem] mb-4 min-[1024px]:text-[2vw]">
@@ -53,10 +59,11 @@ function App() {
               </p>
             </div>
             <div className="my-[2rem] flex gap-4 items-center min-[1024px]:my-[2vw] min-[1024px]:gap-[1vw]">
-              <img src={icon_michael} className="min-[1024px]:w-[5vw]" />
+              <img src={icon_michael} className="w-16 min-[1024px]:w-[5vw]" />
               <div className="flex flex-col gap-1">
-                <h3 className="text-[black] text-[.9rem] leading-[15px] min-[1024px]:text-[1.1vw] min-[1024px]:leading-[1.2vw]">
-                  Dunder Mifflin é a melhor empresa de papel que já trabalhei.
+                <h3 className="italic text-[black] text-[.9rem] leading-[15px] min-[1024px]:text-[1.1vw] min-[1024px]:leading-[1.2vw]">
+                  Dunder Mifflin é a melhor empresa de papel que já
+                  trabalhei.&nbsp;
                   <span className="md:block">
                     O atendimento ao cliente é incomparável!
                   </span>
@@ -74,6 +81,56 @@ function App() {
               alt="logo"
             />
           </div>
+        </section>
+        <section className="flex items-center justify-center flex-col mt-12 mb-16 md:mt-16 min-[1024px]:my-[5vw]">
+          <div>
+            <h2 className="f-medium text-[#232323] text-[1.2rem] mb-4 min-[1024px]:text-[2vw]">
+              Nossas Filiais
+            </h2>
+          </div>
+          <div className="flex gap-6 flex-col items-center justify-center md:flex-row min-[1440px]:gap-[2vw] min-[1440px]:my-[2vw] ">
+            <div className="bg-[#424242] text-[#F7F8F9] -z-20 p-8 rounded-full w-[227px] h-[227px] flex items-center justify-center relative min-[1440px]:w-[13vw] min-[1440px]:h-[13vw]">
+              <img
+                src={scranton_bg}
+                alt="background filial"
+                className="absolute -z-10 min-[1440px]:w-[8vw]"
+              />
+              <h2 className="f-medium text-center text-[1.8rem] leading-6 min-[1440px]:leading-[1.5vw] min-[1440px]:text-[1.6vw]">
+                Scranton,<span className="block">Pensilvânia</span>
+              </h2>
+            </div>
+            <div className="hidden bg-[#424242] w-[5rem] h-[.1rem] md:block min-[1440px]:w-[8vw]"></div>
+            <div className="bg-[#424242] text-[#F7F8F9] -z-20 p-8 rounded-full w-[227px] h-[227px] flex items-center justify-center relative min-[1440px]:w-[13vw] min-[1440px]:h-[13vw]">
+              <img
+                src={stamford_bg}
+                alt="background filial"
+                className="absolute -z-10 min-[1440px]:w-[10vw]"
+              />
+              <h2 className="f-medium text-center text-[1.8rem] leading-6 min-[1440px]:leading-[1.5vw] min-[1440px]:text-[1.6vw]">
+                Stamford,<span className="block">Connecticut</span>
+              </h2>
+            </div>
+            <div className="hidden bg-[#424242] w-[5rem] h-[.1rem] md:block min-[1440px]:w-[8vw]"></div>
+
+            <div className="bg-[#424242] text-[#F7F8F9] -z-20 p-8 rounded-full w-[227px] h-[227px] flex items-center justify-center relative min-[1440px]:w-[13vw] min-[1440px]:h-[13vw]">
+              <img
+                src={utica_bg}
+                alt="background filial"
+                className="absolute -z-10 min-[1440px]:w-[12vw]"
+              />
+              <h2 className="f-medium text-center text-[1.8rem] leading-6 min-[1440px]:leading-[1.5vw] min-[1440px]:text-[1.6vw]">
+                Utica,<span className="block">New York</span>
+              </h2>
+            </div>
+          </div>
+        </section>
+        <section className="flex items-center justify-center flex-col mt-12 mb-16 md:mt-16 min-[1024px]:my-[5vw] ">
+          <div>
+            <h2 className="f-medium text-[#232323] text-[1.2rem] mb-4 min-[1024px]:text-[2vw]">
+              Nosso time
+            </h2>
+          </div>
+          <OurTeam />
         </section>
       </main>
     </>

@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.slick-arrow {
+  display: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f7f8f9;
+}
+
 body {
   background-color: #f7f8f9;
   font-family: "NeueHaasDisplayRoman";
@@ -76,16 +92,4 @@ body {
 
 .f-thin {
   font-family: "NeueHaasDisplayThin";
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #000000;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #f7f8f9;
 }
