@@ -1,3 +1,5 @@
+import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 import OurTeam from "./components/OurTeam";
 
 import logo from "./assets/logo.png";
@@ -7,6 +9,11 @@ import icon_michael from "./assets/icon-michael.png";
 import scranton_bg from "./assets/scranton_bg.png";
 import stamford_bg from "./assets/stamford_bg.png";
 import utica_bg from "./assets/utica_bg.png";
+
+import jan from "./assets/testimonials/jan.png";
+import bob from "./assets/testimonials/bob.png";
+import karen from "./assets/testimonials/karen.png";
+import david from "./assets/testimonials/david.png";
 
 function App() {
   return (
@@ -29,7 +36,7 @@ function App() {
       <main className="mt-[120vh] md:mt-[80vh] min-[1024px]:mt-[95vh]">
         <section className="min-[1024px]:flex gap-5">
           <div className="mx-8 lg:m-[2.5vw] min-[1024px]:w-[150vw] min-[1024px]:mx-[3vw]">
-            <h2 className="f-medium text-[#232323] text-[1.2rem] mb-4 min-[1024px]:text-[2vw]">
+            <h2 className="f-medium text-[#232323] text-[1.2rem] mb-4 min-[1024px]:text-[2vw] min-[1024px]:mb-[1.5vw]">
               Por que escolher a Dunder Mifflin?
             </h2>
             <div className="flex gap-5 flex-col f-roman text-[#828282] min-[1024px]:text-[1.2vw] ">
@@ -88,7 +95,7 @@ function App() {
               Nossas Filiais
             </h2>
           </div>
-          <div className="flex gap-6 flex-col items-center justify-center md:flex-row min-[1440px]:gap-[2vw] min-[1440px]:my-[2vw] ">
+          <div className="flex gap-6 flex-col items-center justify-center lg:flex-row min-[1440px]:gap-[2vw] min-[1440px]:my-[2vw] ">
             <div className="bg-[#424242] text-[#F7F8F9] -z-20 p-8 rounded-full w-[227px] h-[227px] flex items-center justify-center relative min-[1440px]:w-[13vw] min-[1440px]:h-[13vw]">
               <img
                 src={scranton_bg}
@@ -99,7 +106,7 @@ function App() {
                 Scranton,<span className="block">Pensilvânia</span>
               </h2>
             </div>
-            <div className="hidden bg-[#424242] w-[5rem] h-[.1rem] md:block min-[1440px]:w-[8vw]"></div>
+            <div className="hidden bg-[#424242] w-[5rem] h-[.1rem] lg:block min-[1440px]:w-[8vw]"></div>
             <div className="bg-[#424242] text-[#F7F8F9] -z-20 p-8 rounded-full w-[227px] h-[227px] flex items-center justify-center relative min-[1440px]:w-[13vw] min-[1440px]:h-[13vw]">
               <img
                 src={stamford_bg}
@@ -110,7 +117,7 @@ function App() {
                 Stamford,<span className="block">Connecticut</span>
               </h2>
             </div>
-            <div className="hidden bg-[#424242] w-[5rem] h-[.1rem] md:block min-[1440px]:w-[8vw]"></div>
+            <div className="hidden bg-[#424242] w-[5rem] h-[.1rem] lg:block min-[1440px]:w-[8vw]"></div>
 
             <div className="bg-[#424242] text-[#F7F8F9] -z-20 p-8 rounded-full w-[227px] h-[227px] flex items-center justify-center relative min-[1440px]:w-[13vw] min-[1440px]:h-[13vw]">
               <img
@@ -126,12 +133,51 @@ function App() {
         </section>
         <section className="flex items-center justify-center flex-col mt-12 mb-16 md:mt-16 min-[1024px]:my-[5vw] ">
           <div>
-            <h2 className="f-medium text-[#232323] text-[1.2rem] mb-4 min-[1024px]:text-[2vw]">
+            <h2 className="f-medium text-[#232323] text-[1.2rem] mb-4 min-[1024px]:text-[2vw] min-[1024px]:mb-[1.5vw]">
               Nosso time
             </h2>
           </div>
           <OurTeam />
         </section>
+        <section className="flex items-center justify-center flex-col mt-12 mb-16 md:mt-16 min-[1024px]:my-[5vw]">
+          <div>
+            <h2 className="f-medium text-[#232323] text-[1.2rem] mb-4 min-[1024px]:text-[2vw] min-[1024px]:mb-[1.5vw]">
+              O que dizem sobre nós
+            </h2>
+          </div>
+          <div className="flex flex-wrap min-[1024px]:w-[90vw] mx-8 items-center justify-center gap-10 min-[1024px]:gap-[1.5vw]">
+            <Testimonials
+              desc="Além de oferecer um papel excelente, a Dunder Mifflin se destaca pelo atendimento próximo e ágil. Sempre que temos uma solicitação especial, eles nos atendem com prontidão."
+              image={jan}
+              name="Jan Levinson"
+              job="ex-Vice-Presidente de Vendas da Dunder Mifflin"
+            />
+
+            <Testimonials
+              desc="O papel da Dunder Mifflin sempre mantém uma qualidade excepcional, independentemente do volume de pedidos."
+              image={bob}
+              name="Bob Vance"
+              job="Dono da Vance Refrigeration "
+            />
+
+            <Testimonials
+              desc="Trabalho com a Dunder Mifflin há anos, e nunca tive problemas com a qualidade do papel ou com o suporte ao cliente. Eles são completamente de confiança."
+              image={karen}
+              name="Karen Filippelli"
+              job="Gerente Regional da filial de Utica"
+            />
+
+            <Testimonials
+              desc="O papel reciclado da Dunder Mifflin combina qualidade com responsabilidade ambiental. Nossa empresa está comprometida com a sustentabilidade."
+              image={david}
+              name="David Wallace"
+              job="CFO da Dunder Mifflin"
+            />
+          </div>
+        </section>
+        <footer>
+          <Footer />
+        </footer>
       </main>
     </>
   );
